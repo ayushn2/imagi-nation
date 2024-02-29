@@ -15,7 +15,7 @@ if(!cached){
     }
 }
 
-export const connectToDataBase = async() =>{
+export const connectToDatabase = async() =>{
     if(cached.conn) return cached.conn;//If connection is alreday extablished then exit immediately
 
     if(!MONGODB_URL) throw new Error("Missing mongo db URL");
